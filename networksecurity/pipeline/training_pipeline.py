@@ -46,11 +46,10 @@ class TrainingPipeline:
             self.data_ingestion_config=DataIngestionConfig(training_pipeline_config=self.training_pipeline_config)
             logging.info("Starting_data_ingestion")
             data_ingestion=DataIngestion(data_ingestion_config=self.data_ingestion_config)
-
-
-
-
-
+            data_ingestion_artifact=data_ingestion.initiate_data_ingestion()
+            logging.info(f"Data ingestion completed and artifact: {data_ingestion_artifact}")
+            return data_ingestion_artifact
+            
         except Exception as e:
             raise NetworkSecurityException(e,sys)
 
