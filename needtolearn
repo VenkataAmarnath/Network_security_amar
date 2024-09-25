@@ -1,2 +1,5 @@
 check exception and logger
     (just copy pasted as of now)
+
+
+    ERROR: file:///C:/Network_security_amar (from -r requirements.txt (line 14)) does not appear to be a Python project: neither 'setup.py' nor 'pyproject.toml' found.

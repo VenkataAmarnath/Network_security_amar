@@ -3,5 +3,12 @@ pandas
 numpy
 os
 sys
+pymongo
+scikit-learn
+
+
+
+
+
 
 -e .
